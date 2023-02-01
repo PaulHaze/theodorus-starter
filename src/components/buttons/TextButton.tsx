@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import clsxm from '@/lib/clsxm';
+import cx from '@/lib/cx';
 
 const TextButtonVariant = ['primary', 'basic'] as const;
 
@@ -24,7 +24,7 @@ const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
         ref={ref}
         type='button'
         disabled={buttonDisabled}
-        className={clsxm(
+        className={cx(
           'button inline-flex items-center justify-center font-semibold',
           'focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
           'transition duration-100',

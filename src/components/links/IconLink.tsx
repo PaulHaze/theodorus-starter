@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IconType } from 'react-icons';
 
-import clsxm from '@/lib/clsxm';
+import cx from '@/lib/cx';
 
 import UnstyledLink, {
   UnstyledLinkProps,
@@ -38,7 +38,7 @@ const IconLink = React.forwardRef<HTMLAnchorElement, IconLinkProps>(
       <UnstyledLink
         ref={ref}
         type='button'
-        className={clsxm(
+        className={cx(
           'inline-flex items-center justify-center rounded font-medium',
           'focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
           'shadow-sm',
@@ -85,7 +85,7 @@ const IconLink = React.forwardRef<HTMLAnchorElement, IconLinkProps>(
         )}
         {...rest}
       >
-        {Icon && <Icon className={clsxm(iconClassName)} />}
+        {Icon && <Icon className={cx(iconClassName)} />}
       </UnstyledLink>
     );
   }

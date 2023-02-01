@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IconType } from 'react-icons';
 
-import clsxm from '@/lib/clsxm';
+import cx from '@/lib/cx';
 
 import UnstyledLink, {
   UnstyledLinkProps,
@@ -46,7 +46,7 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
       <UnstyledLink
         ref={ref}
         {...rest}
-        className={clsxm(
+        className={cx(
           'inline-flex items-center rounded font-medium',
           'focus:outline-none focus-visible:ring focus-visible:ring-primary-500',
           'shadow-sm',
@@ -99,13 +99,13 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
       >
         {LeftIcon && (
           <div
-            className={clsxm([
+            className={cx([
               size === 'base' && 'mr-1',
               size === 'sm' && 'mr-1.5',
             ])}
           >
             <LeftIcon
-              className={clsxm(
+              className={cx(
                 [
                   size === 'base' && 'md:text-md text-md',
                   size === 'sm' && 'md:text-md text-sm',
@@ -118,13 +118,13 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
         {children}
         {RightIcon && (
           <div
-            className={clsxm([
+            className={cx([
               size === 'base' && 'ml-1',
               size === 'sm' && 'ml-1.5',
             ])}
           >
             <RightIcon
-              className={clsxm(
+              className={cx(
                 [
                   size === 'base' && 'text-md md:text-md',
                   size === 'sm' && 'md:text-md text-sm',
