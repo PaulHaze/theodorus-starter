@@ -23,7 +23,7 @@ export default function HomePage() {
 
       <main>
         <section className='bg-white'>
-          <div className=''>
+          <div className='flex justify-center items-center min-h-screen'>
             <h1>Delete this and get going</h1>
           </div>
         </section>
