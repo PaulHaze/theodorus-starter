@@ -12,11 +12,11 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
-  settings: {
-    next: {
-      rootDir: '-libs_+_templates-/nextjs-starters/theodorus-clean/',
-    },
-  },
+  // settings: {
+  //   next: {
+  //     rootDir: '-libs_+_templates-/nextjs-starters/theodorus-clean/',
+  //   },
+  // },
   rules: {
     'no-unused-vars': 'off',
     'no-console': 'warn',
